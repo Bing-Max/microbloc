@@ -39,4 +39,14 @@
     height: 100%;
     width: 100%;
   }
+
+  .panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col {
+    flex-direction: column;
+  }
 </style>
