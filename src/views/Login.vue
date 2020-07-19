@@ -19,7 +19,7 @@
               <el-input prefix-icon="el-icon-user-solid" v-model="form.name" placeholder="account"></el-input>
             </el-form-item>
             <el-form-item>
-              <el-input prefix-icon="el-icon-lock" v-model="form.passwd" placeholder="password"></el-input>
+              <el-input prefix-icon="el-icon-lock" v-model="form.passwd" placeholder="password" show-password></el-input>
             </el-form-item>
             <el-form-item>
               <el-button type="primary" @click="onSubmit">验证</el-button>
@@ -65,6 +65,7 @@
               message: res.data.msg,
               type: 'success'
             })
+            this.$router.push('/page');
           }
         })
       }
